@@ -1,0 +1,454 @@
+.header {
+
+	position: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 1em;
+  color: #C18A97;
+  margin-bottom: .3em;
+  text-decoration: none;
+
+}
+
+h2 {
+  text-align: center;
+  font-size: 1em;
+  color: #;
+  margin-bottom: .3em;
+  text-decoration: none;
+ font-family: "Georgia";
+
+}
+
+h3 {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: .3em;
+  text-decoration: none;
+  font-family: "Georgia";
+  font-color: black;
+
+
+}
+
+h4 {
+  text-align: center;
+  font-size: 1em;
+  color: #000;
+  margin-bottom: .3em;
+  text-decoration: none;
+  font-family: "Bradley Hand ITC";
+
+}
+
+h5 {
+  text-align: center;
+  font-size: 1em;
+  color: #000;
+  margin-bottom: .3em;
+  text-decoration: none;
+  font-family: "Bradley Hand ITC";
+  font-weight: bold;
+
+}
+
+p {
+
+color: black;
+margin-bottom:0.3em;
+text-decoration:none;
+font-family: "Bradley Hand ITC";
+
+}
+
+
+/* The Overlay (background) */
+
+.openbtn{
+
+  text-decoration: none;
+  text-shadow: 0.5px 1px black;">
+
+  font-size: 140;
+
+  font-weight: bold;
+
+  color: #C18A97;
+
+}
+
+.overlay {
+
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */  
+
+  height: 100%;
+
+  width: 100%;
+
+  position: fixed; /* Stay in place */
+
+  z-index: 1; /* Sit on top */
+
+  left: 0;
+
+  top: 0;
+
+  background-color: rgb(0,0,0); /* Black fallback color */
+
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+
+  overflow-x: hidden; /* Disable horizontal scroll */
+
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+
+}
+
+ 
+
+/* Position the content inside the overlay */
+
+.overlay-content {
+
+  position: relative;
+
+  top: 25%; /* 25% from the top */
+
+  width: 100%; /* 100% width */
+
+  text-align: center; /* Centered text/links */
+
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+
+
+}
+
+ 
+
+/* The navigation links inside the overlay */
+
+.overlay a {
+
+  padding: 8px;
+
+  text-decoration: none;
+
+  font-size: 36px;
+
+  font-weight: bold;
+
+  color: #C18A97;
+
+  display: block; /* Display block instead of inline */
+
+  transition: 0.3s; /* Transition effects on hover (color) */
+
+}
+
+ 
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover, .overlay a:focus {
+
+  color: white;
+
+}
+
+ 
+
+/* Position the close button (top right corner) */
+
+.overlay .closebtn {
+
+  position: absolute;
+
+  top: 20px;
+
+  right: 45px;
+
+  font-size: 60px;
+
+}
+
+ 
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+@media screen and (max-height: 450px) {
+
+  .overlay a {font-size: 20px}
+
+  .overlay .closebtn {
+
+    font-size: 40px;
+
+    top: 15px;
+
+    right: 35px;
+
+  }
+
+}
+
+
+div.card {
+
+  margin: 5px;
+
+  border: 1px solid #ccc;
+
+  width: 180px;
+
+  align: center;
+
+}
+
+ 
+
+div.card:hover {
+
+  border: 1px solid #777;
+
+}
+
+ 
+
+div.card img {
+
+  width: 100%;
+
+  height: auto;
+
+}
+
+ 
+
+div.desc {
+
+  padding: 15px;
+
+  text-align: center;
+
+}
+
+ 
+
+.sidenav {
+
+  height: auto; /*full-height: remove this if you want "auto" height */
+
+  width: 160px; /* Set the width of the sidebar */
+
+  position: auto; /* Fixed Sidebar (stay in place on scroll) */
+
+  z-index: 1; /* Stay on top */
+
+  top: 0; /* Stay at the top */
+
+  left: 0;
+
+  background-color: #111; /* Black */
+
+  overflow-x: hidden; /* Disable horizontal scroll */
+
+  padding-top: 20px;
+
+}
+
+ 
+
+/* The navigation menu links */
+
+.sidenav a {
+
+  padding: 6px 8px 6px 16px;
+
+  text-decoration: none;
+
+  font-size: 25px;
+
+  color: #818181;
+
+  display: block;
+
+}
+
+ 
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+
+  color: #f1f1f1;
+
+}
+
+ 
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+
+<script>
+
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+} 
+
+
+/* Sort Function */
+<button onclick="myFunction1()">Sort Alphabetically</button>
+<button onclick="myFunction2()">Sort Numerically</button>
+
+<p id="demo"></p>
+
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;
+
+function myFunction1() {
+  points.sort();
+  document.getElementById("demo").innerHTML = points;
+}
+
+function myFunction2() {
+  points.sort(function(a, b){return a - b});
+  document.getElementById("demo").innerHTML = points;
+}
+
+/* Open */
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+/* Close */
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+
+</script>
+
+<! -- Geolocation Script
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+} 
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  " --> <!-- br _ Longitude: " + position.coords.longitude;
+}
+
+(If Error)
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred."
+      break;
+  }
+}
+
+</script -->
