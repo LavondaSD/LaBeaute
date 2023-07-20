@@ -21,7 +21,7 @@ h2 {
   color: #;
   margin-bottom: .3em;
   text-decoration: none;
- font-family: "Georgia";
+  font-family: "Georgia";
 
 }
 
@@ -179,7 +179,7 @@ font-family: "Bradley Hand ITC";
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 100%) {
 
   .overlay a {font-size: 20px}
 
@@ -293,7 +293,7 @@ div.desc {
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
+  width: 25%; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
