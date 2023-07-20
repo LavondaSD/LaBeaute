@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: ìGeorgiaî;
+	font-family: ‚ÄúGeorgia‚Äù;
 }
 
 body {
@@ -159,13 +159,13 @@ select:hover {
 	border-radius: 5px;
 }
 
-.img-box {
+/* .img-box {
  	width: 50%;
-height: 17;
-display: flex;
-align-item: center;
-justify-content: center;
-}
+	height: 17;
+	display: flex;
+	align-item: center;
+	justify-content: center;
+} */
 
 .left{
 	width: 50%;
@@ -175,12 +175,12 @@ justify-content: center;
 	justify-content: space-evenly;
 	margin-left: 60px;
 }
-img {
+/* img {
 	max-width: 90%;
 	max-height: 90%;
 	object-fit: cover;
 	object-position: center;
-}
+} */
 
 button {
 	border: none;
