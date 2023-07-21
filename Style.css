@@ -3,6 +3,7 @@
 	position: center;
 	margin-left: auto;
 	margin-right: auto;
+	object-fit: contain;
 }
 
 
@@ -67,7 +68,7 @@ font-family: "Bradley Hand ITC";
 }
 
 table {
-	object-fit: cover;
+	object-fit: contain;
 }
 /* The Overlay (background) */
 
