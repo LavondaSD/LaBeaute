@@ -8,8 +8,8 @@
 .product-card {
 	display: grid;
 	grid-template-columns: repeat(auto-fill), minmax(150px, 1fr);
-	gap: .25rem;
-	margin-top: 1rem;
+	gap: .25em;
+	margin-top: 1em;
 	float: left;
 }
 .card {
