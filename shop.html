@@ -34,15 +34,14 @@
 
 
 <!-- Menu Links -->
-
-<!-- Overlay NavBar -->
-
-<div id="myNav" class="overlay">
-
  <!-- Use any element to open/show the overlay navigation menu -->
 
 <a href="javascript:void(0)" class="openbtn" onclick="openNav()" style="color: #C18A97; font-size: 40px; text-decoration: none; text-shadow: 0.5px 1px black; text-align: center;">Menu</a>
 
+	
+<!-- Overlay NavBar -->
+
+<div id="myNav" class="overlay">
 
   <!-- Button to close the overlay navigation -->
 
@@ -680,9 +679,25 @@ position: fixed;
     
 }
 .product {
-border: 1px solid black;
-padding: .5rem;
-margin-top: 1.5em;
+	border: 1px solid black;
+	padding: .5rem;
+	margin-top: 1.5em;
+	display: grid;
+	grid-template-columns: repeat(auto-fill), minmax(150px, 1fr);
+}
+
+.product-card {
+	display: grid;
+	grid-template-columns: repeat(auto-fill), minmax(150px, 1fr);
+	gap: 2em;
+	margin-top: 5em;
+}
+.card {
+	border: 1px solid black;
+	padding: .5rem;
+	margin-top: 1.5em;
+	display: grid;
+	grid-template-columns: repeat(auto-fill), minmax(150px, 1fr);
 }
 
 .hide {
