@@ -138,12 +138,6 @@
   <img src="FBPF.jpg"></img>
   <h2>Face Mask</h2>
   <p>$5.99-$21.99</p>
-  <button>Add to Cart</button></div>
-
-<div class="product">
-  <img src="FBPF.jpg"></img>
-  <h2>Witch Hazel</h2>
-  <p>$9.99</p>
   <button>Add to Cart</button></div>	
 
 </div>	
@@ -199,7 +193,7 @@
     justify-content: space-around;
     margin-top: 3px;
     padding: 1.5em;
-    background: linear-gradient(55deg, #dccd98 0%, #3fefef1 51%, #fffff0 85%);
+    background: linear-gradient(55deg, #dccd98 0%, #fefef1 51%, #fffff0 85%);
 }
 
 .sidebar {
@@ -246,7 +240,8 @@
   	align-items: center;
 	text-align: center;
 	float: left;
-	grid-template-columns: repeat(4, 1fr);
+	/* grid-template-columns: repeat(4, 1fr); */
+	grid-template-columns: repeat(auto-fill), minmax(100px, 1fr); 
 	justify-content: space-between;
 }
 
@@ -276,17 +271,8 @@
     justify-content: space-around; 
     align-items: center;
     float: left;
-    /*  background: linear-gradient(55deg, #dccd98 0%, #e8d3b9 51%, #fffff0 85%);
-
-   /* grid-template-columns: repeat(auto-fill), minmax(100px, 1fr); */
-}
-
-.card {
-	border: 1px solid black;
-	padding: .5rem;
-	margin-top: 1.5em;
-	display: grid;
-	grid-template-columns: repeat(auto-fill), minmax(100px, 1fr);
+    background: linear-gradient(55deg, #dccd98 0%, #3fefef1 51%, #fffff0 85%);
+    grid-template-columns: repeat(auto-fill), minmax(100px, 1fr); 
 }
 
 .hide {
