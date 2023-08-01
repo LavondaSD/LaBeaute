@@ -22,6 +22,8 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
+	background: linear-gradient(55deg, #dccd98 0%, #e8d3b9 51%, #fffff0 85%);
+
 }
 
 /* .top-bar {
