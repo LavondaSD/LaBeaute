@@ -5,16 +5,39 @@
 	font-family: “Georgia”;
 }
 
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  font-family: “Georgia”;
+  margin-bottom: 8px;
+
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #C18A97;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #fff;
+  color: black;
+}
+
 .product-card {
 	display: grid;
 	grid-template-columns: repeat(auto-fill), minmax(150px, 1fr);
 	gap: 2em;
 	margin-top: 5em;
-}
-.card {
-	border: 1px solid black;
-	padding: 2rem;
-	flex-direction: row;
 }
 
 .body {
@@ -25,15 +48,6 @@
 	background: linear-gradient(55deg, #dccd98 0%, #e8d3b9 51%, #fffff0 85%);
 
 }
-
-/* .top-bar {
-	width:
-	height:
-	background-color: grey;
-	margin-border:
-	display: flex
-	padding:
-} */
 
 .fa-solid {
 	color: black;
@@ -110,7 +124,7 @@ select:hover {
 
 .search {
 	width: 500px;
-	height: 45px;
+	height: 250px;
 	background-color: white;
 	border-radius: 45px;
 	display: flex;
