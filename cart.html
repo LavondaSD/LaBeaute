@@ -44,6 +44,154 @@
 	 
 </header>
 
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	font-family: “Georgia”;
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  font-family: “Georgia”;
+  margin-bottom: 8px;
+
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #C18A97;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #fff;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+  margin-bottom: 30px;
+}
+
+
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3px;
+    padding: 1.5em;
+    /* background: linear-gradient(55deg, #dccd98 0%, #e8d3b9 51%, #fffff0 85%); */
+}
+
+.sidebar {
+    width: 25%;
+    border: 1px solid #777;
+    border-radius: 3px;
+    item-align: center;
+    height: 92vh;
+    box-shadow: .5px .5px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1.5em;
+    margin-top: 1px;
+}
+
+.searchbar {
+    width: 100%;
+    margin-top: 7px;
+    border-radius: 3px;
+    padding: 9px;
+    padding-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    font-family: "Georgia";
+    font-size: 40px;
+    font-weight: bold;  
+    float: right;
+}
+	
+.product {
+	border: 2px solid black;
+	width: auto;
+	padding: 2px;
+	margin-top: 1.5em;
+	margin-right: 2px;
+	margin: 2px;
+	display: grid;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  	max-width: 300px;
+  	margin-bottom: 1.5em;
+  	align-items: center;
+	text-align: center;
+	float: left;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: space-between;
+}
+
+.product button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.product button:hover {
+  opacity: 0.7;
+}
+
+.body {
+    width: 73%;
+    border-radius: 3px;
+    height: 92vh;
+    margin-top: 8px;
+    padding: 3px;
+    display: grid;
+    justify-content: space-around; 
+    align-items: center;
+    float: left;
+    background: linear-gradient(55deg, #dccd98 0%, #e8d3b9 51%, #fffff0 85%);
+}
+
+.card {
+	border: 1px solid black;
+	padding: .5rem;
+	margin-top: 1.5em;
+	display: grid;
+	grid-template-columns: repeat(auto-fill), minmax(100px, 1fr);
+}
+
+.hide {
+display: none;
+}
+
+.images {
+    max-height: 90%;
+    max-width: 90%;
+    object-fit: contain;
+    object-position: center;
+}
+</style>
 
 
 <script>
