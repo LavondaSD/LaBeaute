@@ -10,8 +10,7 @@
 <link href="Style.css" rel="stylesheet">
 
 <link href="./shop" rel="SHOP">
-<link href="./about" rel="ABOUT">
-<link href="./policy" rel"POLICIES">
+<link href="./about" rel="ABOUT US">
 <link href="./cart" rel="CART">
 
 <header>
@@ -32,7 +31,16 @@
 <h3 style="color: black; font-family: Bradley Hand ITC; text-align: center;">Because looking good takes time.. not wasted in a store!</h3>
 
 
+<div class="navbar">
+  <a href="./">HOME</a>
+  <a href="./shop">SHOP</a>
+  <a href="./about">ABOUT US</a>
+  <a href="./cart"><i class="fa fa-shopping-cart"></i>CART<span> 0</span></a>
+  
+      <input id="searchbar" onkeyup="search_product()" type="text"
+        name="search" placeholder="Search.." style="float: right; font-size: 32px; font-weight: bold; color: #C18A97; text-shadow: 0.5px 0.2px black;">
 
+</div>
 
 <!-- Menu Links -->
  <!-- Use any element to open/show the overlay navigation menu -->
@@ -54,20 +62,17 @@
 
   <div class="overlay-content">
 
-    <a class="active" href="./DB">HOME</a>
+    <a class="active" href="./">HOME</a>
 
     <a href="./shop">SHOP</a>
 
-    <a href="./about">ABOUT</a>
-
-    <a href="./policy">POLICIES</a>
+    <a href="./about">ABOUT US</a>
 
     <a href="./cart"><i class="fa fa-shopping-cart"></i>CART<span> 0</span></a>
 
-
   </div>
-
 </div>
+	
 </header>
 
 <body>
@@ -75,7 +80,7 @@
 
 <h3 style="color: black; font-size: 60px; text-align: center;">Choose A Store in Your Area<h3>
 
- <br>
+<br>
 <br>
 
 <!-- Store Gallery Container -->
