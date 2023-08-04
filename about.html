@@ -105,9 +105,9 @@
 	<form>
 
 	<!--  Pop up form to enter information -->
-	<form action="/action_page.php" target="_blank">
+	<form action="application.php" method="get">
 
-		<p><input class="input padding-16 border" type="text" placeholder="Name" required name="Name"></p>
+		<p><input class="input padding-16 border" type="name" placeholder="Name" required name="Name"></p>
 
 		<p><input class="input padding-16 border" type="email" placeholder="Email" required name="Email"></p>
 
@@ -118,6 +118,8 @@
 		<p><input class="input padding-16 border" type="text" placeholder="Drivers License" required name="License"></p>
 
 		<p><input class="input padding-16 border" type="date" placeholder="Date of Birth" required name="Date of Birth"></p>
+
+		<?php echo $_GET["Name"]; ?><br>
 
 		<p><button class="button black" type="submit" onclick="alert(‘Thank you for your interest. We'll Get Back To You Shortly!')">SUBMIT</button></p>
 
