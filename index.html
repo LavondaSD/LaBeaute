@@ -227,7 +227,7 @@
 
     <h3 class="center padding-48"><span class="tag wide"><strong>Send Us A Message</strong></span></h3>
 
-    <form action="/action_page.php" target="_blank">
+    <form action="/message.php" target="get">
 
       <p><input class="input padding-16 border" type="text" placeholder="Name" required name="Name"></p>
 
@@ -235,6 +235,7 @@
 
       <p><input class="input padding-16 border" type="text" placeholder="Message" required name="Message"></p>
 
+	    <?php echo $_GET["Name"]; ?><br>
       <p><button class="button black" type="submit" onclick="alert('Message Sent, We'll Get Back To You Shortly!')">SEND MESSAGE</button></p>
 
     </form>
